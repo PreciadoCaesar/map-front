@@ -1,0 +1,202 @@
+[
+    {
+      "id": "MANZANA",
+      "capa_name": "MANZANA",
+      "category": "Cartografía",
+      "source-layer": "http://190.234.81.103:4081/geoserver/gwc/service/tms/1.0.0/geo_redis:MANZANA@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf",
+      "visible": false,
+      "style": {
+        "type": "fill",
+        "paint": {
+          "fill-color": "#222",
+          "fill-opacity": 0
+        },
+        "layout":{
+          "visibility": "none"
+        },
+        "minzoom":12,
+        "maxzoom": 24
+      },
+      "outline": {
+        "id": "outline-MANZANA",
+        "type": "line",
+        "paint": {
+            "line-color": "#000",
+            "line-width": 1,
+            "line-opacity": 1
+        },
+        "layout":{
+          "visibility": "none"
+        },
+        "minzoom":12,
+        "maxzoom": 24
+      }
+    },
+    {
+      "id": "DISTRITO",
+      "capa_name": "DISTRITO",
+      "category": "Cartografía",
+      "source-layer": "http://190.234.81.103:4081/geoserver/gwc/service/tms/1.0.0/geo_redis:DISTRITO@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf",
+      "visible": false,
+      "style": {
+        "type": "fill",
+        "paint": {
+          "fill-color": "#222",
+          "fill-opacity": 0
+        },
+        "layout":{
+          "visibility": "none"
+        },
+        "minzoom":10,
+        "maxzoom": 24
+      },
+      "outline": {
+        "id": "outline-DISTRITO",
+        "type": "line",
+        "paint": {
+            "line-color": "#000",
+            "line-width": 1,
+            "line-opacity": 1
+        },
+        "layout":{
+          "visibility": "none"
+        },
+        "minzoom":10,
+        "maxzoom": 24
+      }
+    },
+    {
+      "id": "PROVINCIA",
+      "capa_name": "PROVINCIA",
+      "category": "Cartografía",
+      "source-layer": "http://190.234.81.103:4081/geoserver/gwc/service/tms/1.0.0/geo_redis:PROVINCIA@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf",
+      "visible": false,
+      "style": {
+        "type": "fill",
+        "paint": {
+          "fill-color": "#222",
+          "fill-opacity": 0
+        },
+        "layout":{
+          "visibility": "none"
+        },
+        "minzoom":9,
+        "maxzoom": 24
+      },
+      "outline": {
+        "id": "outline-PROVINCIA",
+        "type": "line",
+        "paint": {
+            "line-color": "#000",
+            "line-width": 1,
+            "line-opacity": 1
+        },
+        "layout":{
+          "visibility": "none"
+        },
+        "minzoom":9,
+        "maxzoom": 24
+      }
+    },
+    {
+      "id": "DEPARTAMENTO",
+      "capa_name": "DEPARTAMENTO",
+      "category": "Cartografía",
+      "source-layer": "http://190.234.81.103:4081/geoserver/gwc/service/tms/1.0.0/geo_redis:DEPARTAMENTO@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf",
+      "visible": false,
+      "style": {
+        "type": "fill",
+        "paint": {
+          "fill-color": "#222",
+          "fill-opacity": 0
+        },
+        "layout":{
+          "visibility": "none"
+        },
+        "minzoom":7,
+        "maxzoom": 24
+      },
+      "outline": {
+        "id": "outline-DEPARTAMENTO",
+        "type": "line",
+        "paint": {
+            "line-color": "#000",
+            "line-width": 1,
+            "line-opacity": 1
+        },
+        "layout":{
+          "visibility": "none"
+        },
+        "minzoom":7,
+        "maxzoom": 24
+      }
+    },
+    {
+      "id": "EJE_VIA",
+      "capa_name": "EJE_VIA",
+      "category": "Cartografía",
+      "source-layer": "http://190.234.81.103:4081/geoserver/gwc/service/tms/1.0.0/geo_redis:EJE_VIA@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf",
+      "visible": false,
+      "style": {
+        "type": "line",
+        "paint": {
+          "line-color": "#f00",
+          "line-width": 2
+        },
+        "layout":{
+          "visibility": "none"
+        },
+        "minzoom":13,
+        "maxzoom": 24
+      }
+    },
+    {
+      "id": "EJE_VIA-symbol",
+      "capa_name": "EJE_VIA",
+      "category": "Cartografía",
+      "source-layer": "http://190.234.81.103:4081/geoserver/gwc/service/tms/1.0.0/geo_redis:EJE_VIA@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf",
+      "visible": false,
+      "style": {
+        "type": "symbol",
+        "paint": {
+          "text-color": "#222",
+          "text-halo-color": "#ffff",
+          "text-halo-width": 3
+        },
+        "layout":{
+          "symbol-placement": "line",
+          "text-allow-overlap": false,
+          "text-anchor": "center",
+          "text-field": "{NORMALIZADO}",
+          "text-size": 14,
+          "visibility": "none"
+        },
+        "minzoom":13,
+        "maxzoom": 24
+      }
+    },
+    {
+      "id": "PREDIAL",
+      "capa_name": "PREDIAL",
+      "category": "Cartografía",
+      "source-layer": "http://190.234.81.103:4081/geoserver/gwc/service/tms/1.0.0/geo_redis:PREDIAL@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf",
+      "visible": false,
+      "style": {
+        "type": "circle",
+        "paint": {
+          "circle-color": "#f00ef2",
+          "circle-stroke-width": 2,
+          "circle-stroke-color": "#000000",
+          "circle-radius": {
+            "stops": [[0, 9], [10,5]],
+            "base": 1.75
+          }
+        },
+        "layout":{
+          "visibility": "none"
+        },
+        "minzoom":15,
+        "maxzoom": 24
+      }
+    }
+  ]

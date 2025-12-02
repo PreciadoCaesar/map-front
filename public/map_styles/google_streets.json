@@ -1,0 +1,35 @@
+{
+    "version": 8,
+    "name": "googleStreets",
+    "metadata": {},
+    "center": [
+      1.537786,
+      41.837539
+    ],
+    "zoom": 12,
+    "bearing": 0,
+    "pitch": 0,    
+    "sources": {
+      "googleStreets": {
+        "type": "raster",
+        "tiles": [
+          "http://mt0.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
+          "http://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
+          "http://mt2.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
+          "http://mt3.google.com/vt/lyrs=m&x={x}&y={y}&z={z}"
+        ],
+        "tileSize": 256,
+        "maxzoom": 22
+        }      
+    },
+    "glyphs": "https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "googleStreets",
+            "type": "raster",
+            "source": "googleStreets"
+        }
+    ],
+    "id": "googleStreets"
+  }
+  

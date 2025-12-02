@@ -1,0 +1,35 @@
+{
+    "version": 8,
+    "name": "googleHybrid",
+    "metadata": {},
+    "center": [
+      1.537786,
+      41.837539
+    ],
+    "zoom": 16,
+    "bearing": 0,
+    "pitch": 0,    
+    "sources": {
+      "googleHybrid": {
+        "type": "raster",
+        "tiles": [
+          "http://mt0.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+          "http://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+          "http://mt2.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+          "http://mt3.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"
+        ],
+        "tileSize": 256,
+        "maxzoom": 22
+        }      
+    },
+    "glyphs": "https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "googleHybrid",
+            "type": "raster",
+            "source": "googleHybrid"
+        }
+    ],
+    "id": "googleHybrid"
+  }
+  
