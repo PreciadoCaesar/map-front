@@ -4,6 +4,7 @@ const initialState = {
   mapBoxDrawStateRef: null,
   mapRef: null,
   activeLayer: null,
+  measureMode: null, // 'distance' | 'area' | null
 };
 
 export const mapSlice = createSlice({
@@ -19,6 +20,9 @@ export const mapSlice = createSlice({
     setActiveLayer: (state, action) => {
       state.activeLayer = action.payload;
     },
+    setMeasureMode: (state, action) => {
+      state.measureMode = action.payload; // 'distance' | 'area' | null
+    },
   }
 });
 
@@ -26,6 +30,7 @@ export const {
   setMapboxDrawRef,
   setMapref,
   setActiveLayer,
+  setMeasureMode,
 } = mapSlice.actions;
 
 export default mapSlice.reducer;

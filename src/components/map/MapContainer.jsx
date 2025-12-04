@@ -7,6 +7,7 @@ import { RightPanel } from '../layout/rigth-sidepanel/RightPanel';
 import { BottomPanel } from '../layout/bottom-sidepanel/BottomPanel';
 import { useLocalState } from '../../context/CleanLocalState';
 import { CustomLayers } from './CustomLayers';
+import { GeographicMapLayers } from './GeographicMapLayers';  // ← NUEVO
 import { useDispatch, useSelector } from 'react-redux';
 import { setMapref } from '../../redux/features/mapSlice';
 import { fetchFeatures } from '../../redux/features/FeaturesSlice';
@@ -37,7 +38,6 @@ export const MapContainer = () => {
       await dispatch(fetchFeatures()).unwrap();
     } catch (error) {
       console.error('Error cargando features del backend:', error);
-      // Aquí puedes agregar un toast o notificación al usuario
     }
   }
 
@@ -87,6 +87,7 @@ export const MapContainer = () => {
         style={{ width: '100dvw', height: '100dvh' }}
       >
         <CustomLayers />
+        <GeographicMapLayers />  {/* ← NUEVO */}
       </Map>
     </>
   )
